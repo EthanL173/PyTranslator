@@ -1,4 +1,5 @@
 LANGUAGES = {
+    'en': 'english',
     'af': 'afrikaans',
     'sq': 'albanian',
     'am': 'amharic',
@@ -20,7 +21,6 @@ LANGUAGES = {
     'cs': 'czech',
     'da': 'danish',
     'nl': 'dutch',
-    'en': 'english',
     'eo': 'esperanto',
     'et': 'estonian',
     'tl': 'filipino',
