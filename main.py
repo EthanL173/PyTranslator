@@ -8,6 +8,8 @@ class Home(QWidget):
     #constructor
     def __init__(self):
         super().__init__()
+        self.initUI()
+        self.settings()
 
     def initUI(self):
         self.input_box = QTextEdit()
@@ -24,9 +26,26 @@ class Home(QWidget):
         col1 = QVBoxLayout()
         col2 = QVBoxLayout()
 
+        col1.addWidget(self.title)
+        col1.addWidget(self.input_option)
+        col1.addWidget(self.output_option)
+        col1.addWidget(self.submit)
+        col1.addWidget(self.reset)
+
+        col2.addWidget(self.input_box)
+        col2.addWidget(self.reverse)
+        col2.addWidget(self.output_box)
+
+        self.master.addLayout(col1, 20)
+        self.master.addLayout(col2, 80)
+
+        self.setLayout(self.master)
+        
+
 
     def settings(self):
-        pass
+        self.setWindowTitle("PyTranslator")
+        self.setGeometry(250,250,600,500)
 
     def button_click(self):
         pass
